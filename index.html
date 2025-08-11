@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thirteen Ways of Looking at a Blackbird — Home</title>
+  <meta name="description" content="A meditative journey in black-and-white, inspired by the poetry of Wallace Stevens." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="Home">Jonathan Leavitt</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+        <span class="visually-hidden">Menu</span>☰
+      </button>
+      <ul id="primary-navigation" class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-hero aria-label="Featured slides">
+      <div class="hero-slide active" data-hero-slide>
+        <img src="assets/images/hero-blackbird.jpg" alt="Black-and-white photograph from the series Thirteen Ways of Looking at a Blackbird" class="hero-image" />
+        <div class="hero-overlay">
+          <h1>Thirteen Ways of Looking at a Blackbird</h1>
+          <p class="tagline">“A meditative journey in black-and-white, inspired by the poetry of Wallace Stevens.”</p>
+          <a class="button" href="book.html">Discover the Book</a>
+        </div>
+      </div>
+      <div class="hero-slide" data-hero-slide>
+        <img src="assets/images/carousel-1.jpg" alt="Black-and-white photograph introducing the artist gallery" class="hero-image" />
+        <div class="hero-overlay">
+          <h1>Artist Gallery</h1>
+          <p class="tagline">Enter a selection of photographs — a quiet, monochrome study of gesture, mood, and metaphor.</p>
+          <a class="button" href="gallery.html">Enter the Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Selected quotations">
+      <div class="container">
+        <div class="quotes" data-quotes aria-live="polite">
+          <figure class="quote-item" data-quote>
+            <blockquote>“There is another world, but it is within this one.”</blockquote>
+            <figcaption>Paul Éluard</figcaption>
+          </figure>
+          <figure class="quote-item" data-quote>
+            <blockquote>“It is not every day that the world arranges itself into a poem.”</blockquote>
+            <figcaption>Wallace Stevens</figcaption>
+          </figure>
+          <figure class="quote-item" data-quote>
+            <blockquote>“Reality is a cliché from which we escape by metaphor.”</blockquote>
+            <figcaption>Wallace Stevens</figcaption>
+          </figure>
+          <figure class="quote-item" data-quote>
+            <blockquote>« Il y a un autre monde, mais il est dans celui-ci »</blockquote>
+            <figcaption>Paul Éluard</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Selected photographs">
+      <div class="container">
+        <div class="gallery" data-gallery tabindex="0" aria-label="Cycling gallery of photographs">
+          <img class="gallery-item" data-gallery-item src="assets/images/carousel-1.jpg" alt="Black-and-white photograph from the series — 1" />
+          <img class="gallery-item" data-gallery-item src="assets/images/carousel-2.jpg" alt="Black-and-white photograph from the series — 2" />
+          <img class="gallery-item" data-gallery-item src="assets/images/carousel-3.jpg" alt="Black-and-white photograph from the series — 3" />
+          <img class="gallery-item" data-gallery-item src="assets/images/carousel-4.jpg" alt="Black-and-white photograph from the series — 4" />
+          <img class="gallery-item" data-gallery-item src="assets/images/carousel-5.jpg" alt="Black-and-white photograph from the series — 5" />
+          <img class="gallery-item" data-gallery-item src="assets/images/carousel-6.jpg" alt="Black-and-white photograph from the series — 6" />
+          <button class="gallery-control prev" type="button" data-gallery-prev aria-label="Previous image">‹</button>
+          <button class="gallery-control next" type="button" data-gallery-next aria-label="Next image">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2" style="align-items:center; gap: var(--space-8);">
+        <div>
+          <h2>Explore the Book</h2>
+          <p class="lead">Explore the visual meditation inspired by Wallace Stevens’ <em>Thirteen Ways of Looking at a Blackbird</em>. Click to see the book and experience the world through a new lens.</p>
+          <a class="button dark" href="book.html">View the Book</a>
+        </div>
+        <div>
+          <h2>Stay in Touch</h2>
+          <p class="lead">Sign up to receive exclusive previews, exhibition updates, and behind-the-scenes insights into the making of <em>Thirteen Ways of Looking at a Blackbird</em>.</p>
+          <form class="form" action="mailto:jlk@leavittassoc.com?subject=Newsletter%20Signup" method="POST" enctype="text/plain">
+            <label>
+              <span class="visually-hidden">Email</span>
+              <input class="input" type="email" name="email" placeholder="Your email" required />
+            </label>
+            <div>
+              <button class="button dark" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jonathan Leavitt — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

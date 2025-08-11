@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Thirteen Ways of Looking at a Blackbird</title>
+  <meta name="description" content="Selected photographs by Jonathan Leavitt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">Jonathan Leavitt</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+        <span class="visually-hidden">Menu</span>☰
+      </button>
+      <ul id="primary-navigation" class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p class="lead">Let your eye linger; meaning emerges in the details between light and shadow. Ordinary moments become portals to abstraction.</p>
+      </div>
+      <div class="container grid grid-3" style="gap: var(--space-6); margin-top: var(--space-6);" data-lightbox-group>
+        <figure class="figure">
+          <img src="assets/images/gallery-1.jpg" alt="A solitary figure in a white coat walking briskly past a blurred hedge, suspended in a motion-filled monochrome landscape; a meditation on isolation and passage." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-2.jpg" alt="Overhead view of two silhouetted people ascending stone steps, elongated shadows cast in harsh light, suggesting private conversation and layers of presence." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-3.jpg" alt="A lone man shoveling snow on a broad, textured expanse, his figure blurred by motion—a study in perseverance and existential labor." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-4.jpg" alt="A dense, energetic crowd captured in black and white with faces turned, expressions and movements colliding to evoke the mystery of urban gatherings." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-5.jpg" alt="A figure bending beside a makeshift cart or shelter on pavement, the geometric structure and ambiguous intent conjuring themes of vulnerability and transient shelter." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-6.jpg" alt="A wide, high-contrast aerial of a beach scene with scattered bathers, distant and small, alluding to the fleeting and fragmentary nature of public life." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-7.jpg" alt="A woman passes through a sparkled backdrop." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-8.jpg" alt="A man spralled out sleeping." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-9.jpg" alt="A man stands solo in a geometric tiled landscape." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-10.jpg" alt="Tree branches etched against a winter sky, stark and lyrical, above a cityscpe with three contrasting lights." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-11.jpg" alt="A woman pets a white dog passing by." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-12.jpg" alt="Two seated people holding hands, captured at knee level." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-13.jpg" alt="Two turkeys, one is waiting patiently, the other is gracefully crossing the street." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-14.jpg" alt="Aerial view of a the junciton of a ski mountain." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-15.jpg" alt="Blurred photo of a woman swimming." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-16.jpg" alt="Window cleaner leaning over a bowed latter to reach the hard spots." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-17.jpg" alt="Group scene showing multiple people in what appears to be a casual or social setting, with figures visible but details obscured by the black and white treatment." data-lightbox-item />
+        </figure>
+        <figure class="figure">
+          <img src="assets/images/gallery-18.jpg" alt="Outdoor scene with multiple people, possibly at a beach or recreational area, showing figures in a more relaxed, leisure environment." data-lightbox-item />
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jonathan Leavitt — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" data-lightbox aria-hidden="true">
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">×</button>
+    <button class="lightbox-control prev" type="button" data-lightbox-prev aria-label="Previous image">‹</button>
+    <img class="lightbox-image" data-lightbox-image alt="Expanded photograph" />
+    <div class="lightbox-caption" data-lightbox-caption></div>
+    <button class="lightbox-control next" type="button" data-lightbox-next aria-label="Next image">›</button>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+

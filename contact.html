@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Thirteen Ways of Looking at a Blackbird</title>
+  <meta name="description" content="Contact for inquiries about the photobook and gallery exhibitions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">Jonathan Leavitt</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+        <span class="visually-hidden">Menu</span>☰
+      </button>
+      <ul id="primary-navigation" class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">For inquiries about the book, editions, or exhibitions, please use the form below or email directly.</p>
+
+        <div class="grid grid-2" style="align-items:start; gap: var(--space-8);">
+          <aside>
+            <img src="assets/images/contact-side.jpg" alt="Black-and-white photograph related to the series" class="contact-image" />
+          </aside>
+          <div>
+            <form class="form" action="mailto:jlk@leavittassoc.com" method="POST" enctype="text/plain">
+              <label>
+                <span class="visually-hidden">Name</span>
+                <input class="input" type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span class="visually-hidden">Email</span>
+                <input class="input" type="email" name="email" placeholder="Your email" required />
+              </label>
+              <label>
+                <span class="visually-hidden">Message</span>
+                <textarea name="message" placeholder="Your message" required></textarea>
+              </label>
+              <div>
+                <button class="button dark" type="submit">Send</button>
+              </div>
+            </form>
+
+            <div style="margin-top: var(--space-7);">
+              <h2>Direct</h2>
+              <p class="muted">Email: <a href="mailto:jlk@leavittassoc.com">jlk@leavittassoc.com</a></p>
+              <p class="muted">Instagram: <a href="https://instagram.com/jonathanleavittphotography" target="_blank" rel="noopener">@jonathanleavittphotography</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jonathan Leavitt — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

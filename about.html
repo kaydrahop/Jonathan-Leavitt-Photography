@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Thirteen Ways of Looking at a Blackbird</title>
+  <meta name="description" content="About the photographer and artist statement for Thirteen Ways of Looking at a Blackbird." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">Jonathan Leavitt</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+        <span class="visually-hidden">Menu</span>☰
+      </button>
+      <ul id="primary-navigation" class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container grid grid-2" style="align-items: start; gap: var(--space-8);">
+        <div>
+          <h1>About the Artist</h1>
+          <p class="lead">Jonathan Leavitt’s photographic journey began at the age of twelve, sparked by early hands-on experience with a 4×5 Graphex camera under the informal tutelage of his father.</p>
+          <p>While the origins of his father’s expertise remain a mystery, Leavitt absorbed foundational lessons that would shape his lifelong commitment to the medium. Deeply inspired by masters like Cartier-Bresson, Edward Steichen, Alfred Stieglitz, and Ansel Adams, Jonathan expanded his artistic vision through studies in painting, drawing, printmaking, and architecture, although he never pursued formal photographic education. His approach to photography is deeply intuitive and self-reflective, guided by continual exploration and critique from fellow photographers. Based in Brookline, Massachusetts, he travels widely, seeking moments that transcend everyday life into poetic visual meditations.</p>
+          <h2>Artist Statement</h2>
+          <p>My photography centers on transcending the ordinary to reveal deeper poetic and metaphorical dimensions within everyday life. Working primarily in black and white, I use the medium to abstract reality and create spaces where subtle interactions and hidden narratives emerge beyond surface appearances. I aim for my images to invite viewers to slow down and engage with the world through a reflective, intuitive lens—transforming familiar scenes into meditative visual poems.</p>
+          <p>My book, <em>Thirteen Ways of Looking at a Blackbird</em>, exemplifies this approach by interpreting Wallace Stevens’ poetry through photography, but this vision extends across all of my work. I focus on mood, gesture, and the power of metaphor to evoke emotional and philosophical resonance. My photographic practice is an ongoing exploration of perception, feeling, and the poetic potential of the everyday.</p>
+          <p class="muted">For a complete CV and exhibition history, please get in touch via the contact page.</p>
+        </div>
+        <aside>
+          <img src="assets/images/artist-portrait.jpg" alt="Portrait of the photographer, Jonathan Leavitt" class="portrait" />
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jonathan Leavitt — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
