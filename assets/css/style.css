@@ -175,4 +175,105 @@ textarea { min-height: 160px; resize: vertical; }
 .lightbox-control.prev { left: 16px; }
 .lightbox-control.next { right: 16px; }
 
+/* Blog posts */
+.blog-posts { display: grid; gap: var(--space-6); margin: var(--space-6) 0; }
+.blog-post { 
+  border: 1px solid var(--gray-200); 
+  background: var(--gray-100); 
+  transition: border-color 200ms ease, background 200ms ease;
+  overflow: hidden;
+}
+.blog-post:hover { 
+  border-color: var(--gray-400); 
+  background: var(--white); 
+}
+.blog-post-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+.blog-post-image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.blog-post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 200ms ease;
+}
+.blog-post:hover .blog-post-image img {
+  filter: grayscale(0%);
+}
+.blog-post-text {
+  padding: var(--space-5);
+  padding-left: 0;
+}
+.blog-post h3 { 
+  margin-bottom: var(--space-2); 
+  font-size: 1.1rem; 
+  line-height: 1.4;
+}
+.blog-post h3 a { 
+  color: var(--black); 
+  text-decoration: none; 
+  border-bottom: 1px solid transparent; 
+  transition: border-color 200ms ease;
+}
+.blog-post h3 a:hover, .blog-post h3 a:focus { 
+  border-bottom-color: var(--black); 
+}
+.blog-meta { 
+  color: var(--gray-600); 
+  font-size: 0.9rem; 
+  margin-bottom: var(--space-3); 
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+  .blog-post p:last-child { 
+  margin-bottom: 0; 
+  color: var(--gray-800); 
+  font-size: 0.95rem; 
+  line-height: 1.5;
+}
+
+/* Instagram link */
+.instagram-link {
+  margin: var(--space-6) 0;
+  padding: var(--space-5);
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  text-align: center;
+}
+.instagram-link p {
+  margin: 0;
+  color: var(--gray-800);
+  font-size: 1rem;
+}
+.instagram-link a {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+  transition: border-color 200ms ease;
+}
+.instagram-link a:hover, .instagram-link a:focus {
+  border-bottom-color: transparent;
+}
+
+@media (max-width: 700px) {
+  .blog-post-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  .blog-post-image {
+    height: 200px;
+  }
+  .blog-post-text {
+    padding: var(--space-5);
+    padding-top: 0;
+  }
+}
+
 .book-cover { width: 100%; height: auto; filter: grayscale(100%); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
